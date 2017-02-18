@@ -1,0 +1,81 @@
+//
+//  PrefixHeader.pch
+//  OneProject
+//
+//  Copyright © 2016年 LiuGouDong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//阅读主界面的接口
+#define kReadListURL @"http://api2.pianke.me/read/columns"
+//阅读详情界面的接口（二级界面）
+#define kReadDetailURL @"http://api2.pianke.me/read/columns_detail"
+//阅读文章详情界面接口（三级界面）
+#define kReadInfURL @"http://api2.pianke.me/article/info"
+
+//话题主界面
+#define kTopicListURL @"http://api2.pianke.me/group/posts_hotlist"
+
+//电台主界面
+#define kRadioListURL @"http://api2.pianke.me/ting/radio"
+//电台主界面上拉加载
+#define kRadioListNEXT @"http://api2.pianke.me/ting/radio_list"
+//电台详情界面
+#define kRadioDetailURL @"http://api2.pianke.me/ting/radio_detail"
+//电台详情加载界面
+#define kRadioDetailLoadURL  @"http://api2.pianke.me/ting/radio_detail_list"
+
+//良品主界面
+#define KGoodProdductURL @"http://api2.pianke.me/pub/shop"
+//良品详情
+#define KGoodDetailURL @"http://api2.pianke.me/group/posts_info"
+
+
+//注册接口
+
+#define KRegisUrl @"http://api2.pianke.me/user/reg"
+
+//登陆接口
+
+#define KLoginUrl @"http://api2.pianke.me/user/login"
+
+//评论接口
+
+#define KConmentListUrl @"http://api2.pianke.me/comment/get"
+
+//发表评论接口
+#define KAddConmentUrl @"http://api2.pianke.me/comment/add"
+
+//删除评论接口
+#define KdelCommentUrl @"http://api2.pianke.me/comment/del"
+
+
+
+//PCH文件一般用于引入头文件，引入之后全局都不需要再引入此文件，一般引入一些封装好的类供全局调用.
+#import "LORefreshControl.h"
+#import "GoodListModel.h"
+#import "GoodListCell.h"
+#import "Header.h"
+#import "NetworkingManager.h"
+#import "CircleView.h"
+#import "UIImageView+AFNetworking.h"
+#import "MJRefresh.h"
+#import "UIScrollView+MJRefresh.h"
+#import "MJChiBaoZiHeader.h"
+#import "MJChiBaoZiFooter2.h"
+#import "MJChiBaoZiFooter.h"
+#import <AVFoundation/AVFoundation.h>
+#import <AVFoundation/AVPlayer.h>
+#import "AppDelegate.h"
+
+
+#import "RadioViewController.h"
+#import "RadioListModel.h"
+#import "RadioCircleModel.h"
+#import "RadioListCell.h"
+#import "RadioDetailVC.h"
+#import "RadioPlayerController.h"
+#import "ArchiveManager.h"
+#import "PlayerManager.h"
+#endif /* PrefixHeader_pch */

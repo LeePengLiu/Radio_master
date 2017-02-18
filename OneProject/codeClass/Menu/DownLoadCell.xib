@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="downLoadCell" rowHeight="100" id="KGk-i7-Jjw" customClass="DownLoadCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QjW-N8-eHd">
+                        <rect key="frame" x="112" y="79" width="150" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="BUl-Fh-kn2"/>
+                            <constraint firstAttribute="height" constant="2" id="Lme-3n-Mzm"/>
+                        </constraints>
+                    </progressView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0z-8g-eOM">
+                        <rect key="frame" x="324" y="35" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="PIk-YM-mAe"/>
+                            <constraint firstAttribute="width" constant="30" id="dyD-aU-URr"/>
+                        </constraints>
+                        <state key="normal" title="暂停"/>
+                        <connections>
+                            <action selector="downAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7Ao-hj-3V7"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6m-sk-W2Y" userLabel="Label3">
+                        <rect key="frame" x="294" y="69" width="73" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OkQ-IG-iof"/>
+                            <constraint firstAttribute="width" constant="73" id="w04-li-nkx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45E-9e-l3Q" userLabel="Label2">
+                        <rect key="frame" x="64" y="39" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHf-6h-LVZ" userLabel="Label1">
+                        <rect key="frame" x="8" y="39" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X0z-8g-eOM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="45E-9e-l3Q" secondAttribute="trailing" constant="13" id="E4Z-Xd-5PM"/>
+                    <constraint firstItem="c6m-sk-W2Y" firstAttribute="top" secondItem="45E-9e-l3Q" secondAttribute="bottom" constant="9" id="FH5-r9-rpI"/>
+                    <constraint firstItem="c6m-sk-W2Y" firstAttribute="top" secondItem="X0z-8g-eOM" secondAttribute="bottom" constant="4" id="PlJ-c4-lJ3"/>
+                    <constraint firstItem="QjW-N8-eHd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="79" id="RkN-ml-ZN4"/>
+                    <constraint firstAttribute="trailing" secondItem="QjW-N8-eHd" secondAttribute="trailing" constant="113" id="S0k-EC-tCK"/>
+                    <constraint firstItem="45E-9e-l3Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="UBO-0d-dtQ"/>
+                    <constraint firstAttribute="trailing" secondItem="c6m-sk-W2Y" secondAttribute="trailing" constant="8" id="UDh-Pt-ktm"/>
+                    <constraint firstAttribute="trailing" secondItem="X0z-8g-eOM" secondAttribute="trailing" constant="21" id="ZnC-Xq-zT3"/>
+                    <constraint firstItem="EHf-6h-LVZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="biS-tj-TYR"/>
+                    <constraint firstItem="45E-9e-l3Q" firstAttribute="leading" secondItem="EHf-6h-LVZ" secondAttribute="trailing" constant="14" id="dKD-AL-Cg7"/>
+                    <constraint firstItem="EHf-6h-LVZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="i4f-jH-tcP"/>
+                    <constraint firstAttribute="bottom" secondItem="EHf-6h-LVZ" secondAttribute="bottom" constant="39" id="mET-gN-WF9"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EHf-6h-LVZ" secondAttribute="trailing" constant="200" id="qiN-WE-PTC"/>
+                    <constraint firstItem="X0z-8g-eOM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="ydb-td-HGY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downAction" destination="X0z-8g-eOM" id="sHh-Tz-hbY"/>
+                <outlet property="myProgressVIew" destination="QjW-N8-eHd" id="4Ki-w9-2fo"/>
+                <outlet property="progressLabel" destination="c6m-sk-W2Y" id="ITz-9N-qcC"/>
+                <outlet property="titleLabel" destination="EHf-6h-LVZ" id="lIU-xd-tii"/>
+                <outlet property="unameLabel" destination="45E-9e-l3Q" id="2GD-kP-GMX"/>
+            </connections>
+            <point key="canvasLocation" x="365.5" y="386"/>
+        </tableViewCell>
+    </objects>
+</document>
